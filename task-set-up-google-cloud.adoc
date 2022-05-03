@@ -1,0 +1,71 @@
+---
+sidebar: sidebar 
+permalink: task-set-up-google-cloud.html 
+keywords: setup, set up, api, service account, requirements, permissions 
+summary: Cloud Manager需要透過Cloud Volumes Service Google Cloud服務帳戶存取不必要的API及適當權限。 
+---
+= 設定Google Cloud
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Cloud Manager需要透過Cloud Volumes Service Google Cloud服務帳戶存取不必要的API及適當權限。
+
+
+
+== 啟用 Cloud Volumes Service 此功能
+
+在 Google Cloud Shell 中、執行下列命令來啟用 Cloud Volumes Service 此功能：
+
+「 gCloud --project =<my-cs-project > 服務可支援 cloudvolumesgcp-api.netapp.com`
+
+
+
+== 設定服務帳戶
+
+完成下列工作、讓Cloud Manager能夠存取您的Google Cloud專案：
+
+* 建立新的服務帳戶
+* 將新的服務帳戶成員新增至專案、並指派給專案特定的角色（權限）
+* 為用於驗證 Google 的服務帳戶建立並下載金鑰配對
+
+
+.步驟
+. 在Google Cloud主控台中、 https://console.cloud.google.com/iam-admin/serviceaccounts["前往「服務帳戶」頁面"^]。
+. 按一下 * 選取專案 * 、選擇您的專案、然後按一下 * 開啟 * 。
+. 按一下「*建立服務帳戶*」。
+. 輸入服務帳戶名稱（易記的顯示名稱）和說明。
++
+Cloud Console會根據此名稱產生服務帳戶ID。如有必要、請編輯ID：您稍後無法變更ID。
+
+. 若要立即設定存取控制項、請按一下「*建立*」、然後從頁面底部按一下「*完成*」、然後繼續下一步。
+. 從「 _IAM 」頁面按一下「 * 新增 * 」、然後填寫「 _Add Memu__ 」頁面中的欄位：
++
+.. 在 New Members （新成員）欄位中、輸入完整的服務帳戶 ID 、例如 user1-service-account-cvs@project1.iam.gserviceaccount.com 。
+.. 新增以下角色：
++
+*** _NetApp Cloud Volumes 管理 _
+*** 運算網路檢視器 _
+
+
+.. 按一下「 * 儲存 * 」。
+
+
+. 按一下「服務帳戶名稱」、然後從「服務帳戶詳細資料」頁面、按一下「*新增金鑰>建立新金鑰*」。
+. 選擇 * JSON* 作為金鑰類型、然後按一下 * 「 Create * （建立 * ）」。
++
+按一下「 * 建立 * 」、就會產生新的公開 / 私密金鑰配對、並下載至您的系統。它是唯一的私密金鑰複本。請安全地儲存此檔案、因為它可用於驗證您的服務帳戶。
+
+
+
+如需詳細步驟、請參閱Google Cloud文件：
+
+* link:https://cloud.google.com/iam/docs/creating-managing-service-accounts["建立及管理服務帳戶"^]
+* link:https://cloud.google.com/iam/docs/granting-changing-revoking-access["授予、變更及撤銷資源存取權"^]
+* link:https://cloud.google.com/iam/docs/creating-managing-service-account-keys["建立及管理服務帳戶金鑰"^]
+

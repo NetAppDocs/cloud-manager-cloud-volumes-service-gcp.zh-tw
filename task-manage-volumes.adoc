@@ -1,0 +1,83 @@
+---
+sidebar: sidebar 
+permalink: task-manage-volumes.html 
+keywords: manage volumes, mount command, delete volume, edit volume, edit snapshot policy 
+summary: 您可以在儲存需求變更時管理現有的磁碟區。您可以檢視、編輯、還原及刪除磁碟區。 
+---
+= 管理現有磁碟區
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+您可以在儲存需求變更時管理現有的磁碟區。您可以檢視、編輯、還原及刪除磁碟區。
+
+.步驟
+. 開啟工作環境。
+. 將游標暫留在磁碟區上。
++
+image:screenshot_cvs_gcp_volume_hover_menu.png["Volume Hover 功能表的快照、可讓您執行 Volume 工作"]
+
+. 管理您的磁碟區：
++
+[cols="30,70"]
+|===
+| 工作 | 行動 
+
+
+| 檢視磁碟區的相關資訊 | 按一下 * 資訊 * 。 
+
+
+| 編輯磁碟區（包括 Snapshot 原則）  a| 
+.. 按一下 * 編輯 * 。
+.. 修改磁碟區的內容、然後按一下 * 更新 * 。
+
+
+
+
+| 取得 NFS 或 SMB 掛載命令  a| 
+.. 按一下 * 掛載磁碟區 * 。
+.. 按一下 * 複製 * 以複製命令。
+
+
+
+
+| 隨需建立 Snapshot 複本  a| 
+.. 按一下 * 建立 Snapshot 複本 * 。
+.. 視需要變更名稱、然後按一下「 * 建立 * 」。
+
+
+
+
+| 將磁碟區更換為 Snapshot 複本的內容  a| 
+.. 按一下 * 「將磁碟區還原為快照 * 」。
+.. 選取 Snapshot 複本、然後按一下 * 還原 * 。
+
+
+
+
+| 刪除 Snapshot 複本  a| 
+.. 按一下 * 刪除 Snapshot 複本 * 。
+.. 選取快照、然後按一下 * 刪除 * 。
+.. 當系統提示您確認時、請再次按一下 * 刪除 * 。
+
+
+
+
+| 刪除 Volume  a| 
+.. 從所有用戶端卸載 Volume ：
++
+*** 在 Linux 用戶端上、請使用「 umount 」命令。
+*** 在 Windows 用戶端上、按一下 * 中斷網路磁碟機 * 。
+
+
+.. 選取磁碟區、然後按一下 * 刪除 * 。
+.. 再按一下 * 刪除 * 以確認。
+
+
+|===
+

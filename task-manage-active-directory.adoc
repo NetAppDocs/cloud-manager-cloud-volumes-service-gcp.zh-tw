@@ -1,0 +1,47 @@
+---
+sidebar: sidebar 
+permalink: task-manage-active-directory.html 
+keywords: active directory, dns, domain, dns servers, smb server 
+summary: 如果您變更了DNS伺服器或Active Directory網域、您需要修改Cloud Volumes Service 位於支援區的SMB伺服器、才能繼續將儲存設備提供給用戶端。 
+---
+= 管理Active Directory組態
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+如果您變更了DNS伺服器或Active Directory網域、您需要修改Cloud Volumes Service 位於支援區的SMB伺服器、才能繼續將儲存設備提供給用戶端。
+
+.步驟
+. 開啟工作環境。
+. 按一下 image:screenshot_gallery_options.gif[""] 按鈕、然後按一下 * 管理 Active Directory * 。
++
+如果未設定 Active Directory 、您可以立即新增一個 Active Directory 。如果已設定、您可以使用修改或刪除設定 image:screenshot_gallery_options.gif[""] 按鈕。
+
+. 指定 SMB 伺服器的設定：
++
+[cols="25,75"]
+|===
+| 欄位 | 說明 
+
+
+| DNS 主要 IP 位址 | 提供 SMB 伺服器名稱解析的 DNS 伺服器 IP 位址。當參考多個伺服器時、請使用逗號分隔 IP 位址、例如 172.31.25.223 、 172.31.2.74 。 
+
+
+| 要加入的 Active Directory 網域 | 您要 SMB 伺服器加入之 Active Directory （ AD ）網域的 FQDN 。 
+
+
+| SMB 伺服器的 NetBios 名稱 | 要建立之 SMB 伺服器的 NetBios 名稱。 
+
+
+| 授權加入網域的認證資料 | 具有足夠權限的 Windows 帳戶名稱和密碼、可將電腦新增至 AD 網域內的指定組織單位（ OU ）。 
+
+
+| 組織單位 | AD 網域中與 SMB 伺服器相關聯的組織單位。預設值為「 CN= 電腦」、用於連線至您自己的 Windows Active Directory 伺服器。 
+|===
+. 按一下「 * 儲存 * 」以儲存您的設定。
+

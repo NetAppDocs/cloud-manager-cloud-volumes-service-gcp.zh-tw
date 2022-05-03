@@ -1,0 +1,349 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<blocks>
+  <block id="98d397091057eb9a16b0fe981b3ad815" category="summary">NetApp Cloud Volumes Service for Google Cloud是一項整合式檔案服務、具備進階資料管理功能、可提供在雲端移轉及執行企業工作負載所需的效能、可用度及安全性。這些文件說明如何Cloud Volumes Service 使用NetApp Cloud Manager來管理適用於Google Cloud的功能。</block>
+  <block id="c164c685163f0ac5277f4c117b8c9c2c" category="doc">適用於Google Cloud文件Cloud Volumes Service</block>
+  <block id="a1e613d4b9053de36bf30c8396728155" category="summary">在 Cloud Volumes Service Cloud Manager 中建立一個適用於 Google Cloud 的工作環境、以建立及管理磁碟區和快照。</block>
+  <block id="5747722bb189495cdccebf12276e2ffd" category="doc">建立Cloud Volumes Service 適用於Google Cloud工作環境的功能</block>
+  <block id="871267ec860c59e6022484041d4d960e" category="paragraph">在Cloud Volumes Service Cloud Manager中建立適用於Google Cloud的支援環境、以便建立及管理磁碟區和快照。</block>
+  <block id="4dd9c591139d8d343bfac0ba8317d5ab" category="paragraph">無論您已經從Google Cloud Console建立磁碟區、或是剛註冊Cloud Volumes Service 使用Google Cloud的版本、但目前還沒有磁碟區、第一步是根據您的GCP訂閱、為磁碟區建立工作環境。</block>
+  <block id="e3c3a0b2e9bccb0ed0678e6d2b6e5101" category="paragraph">如果此訂閱已存在雲端磁碟區、則磁碟區會出現在新的工作環境中。如果您尚未新增任何雲端磁碟區以供 GCP 訂閱、請在建立新的工作環境之後再新增。</block>
+  <block id="b7c67692dc38dca98edc62b4b29f83d8" category="admonition">如果您在多個Google Cloud專案中有訂閱和磁碟區、則必須針對每個專案執行此工作。</block>
+  <block id="107a414e0bf62dc36bb6bbde7bcd19de" category="paragraph">新增每個專案的訂閱時、您必須提供下列資訊：</block>
+  <block id="61d55eb42b926e824d916fc29d4b2127" category="list-text">服務帳戶認證（您下載的 Json 私密金鑰）</block>
+  <block id="7adea0d9c77aabccd8bb67ae0a832d59" category="list-text">專案名稱</block>
+  <block id="f3a29486bed19a90f2da6d007818b427" category="list-title">步驟</block>
+  <block id="8160c66171203c7c10750b51088251a8" category="list-text">在 Cloud Manager 中、新增工作環境、選取位置 * Google Cloud * 、然後按一下 * 繼續 * 。</block>
+  <block id="5437257338a1645396ca701fba74ee19" category="list-text">選取 * Cloud Volumes Service 《 * 》 * 《 * 》 * 、然後按一下 * 「 Continue * 」。</block>
+  <block id="68aa8fd14019bf80c98f197ea78d6acc" category="inline-image-macro">為 Cloud Volumes Service 簽署以供簽署的功能性功能提供工作環境的快照。</block>
+  <block id="e407814ff6ab4fb1b63ad38464f53b73" category="paragraph"><block ref="e407814ff6ab4fb1b63ad38464f53b73" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="9080d954a7c1febdfca0a4458cd577b0" category="list-text">提供 Cloud Volumes Service 有關您的不訂閱資訊：</block>
+  <block id="5a341ba1dd9ba8680efd382c4f5778ad" category="list-text">輸入您要使用的工作環境名稱。</block>
+  <block id="56bab707c78784ba9b87a1e53b01fb02" category="list-text">複製 / 貼上您在先前步驟中下載的 Json 私密金鑰。</block>
+  <block id="98061d4b41ea7e9a2f4ca7bbd84f29b8" category="list-text">選取 Google Cloud 專案的名稱。</block>
+  <block id="26983a904e0717c520032a2178795368" category="list-text">按一下 * 繼續 * 。</block>
+  <block id="756fe8c276796e025f6186df6fad79f9" category="inline-image-macro">為 Cloud Volumes Service GCP 訂閱新增認證的快照。</block>
+  <block id="9abb056391b209b3886860757a68afa6" category="paragraph"><block ref="9abb056391b209b3886860757a68afa6" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="d1536678830c26f77ea3d432c63adbd6" category="paragraph">Cloud Manager 會顯示 Cloud Volumes Service 您的 Google Cloud 工作環境的功能。</block>
+  <block id="9940ae9ac5b6e6e70ab66bca7f76d51f" category="inline-image-macro">適用於 Google Cloud 工作環境的功能快照 Cloud Volumes Service 。</block>
+  <block id="9e4d57614250697869bda0f9844b2597" category="paragraph"><block ref="9e4d57614250697869bda0f9844b2597" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="1a9e28288f987d2aa7cac4c83ef241dd" category="paragraph">如果此訂閱已存在雲端磁碟區、則磁碟區會出現在新的工作環境中。您可以從 Cloud Manager 新增其他雲端磁碟區。</block>
+  <block id="a1f2a018efc72b6fcf1f805684b3c31a" category="paragraph">如果此訂閱不存在任何雲端磁碟區、請立即建立。</block>
+  <block id="3d0356467ac23a5028ee4d6562d2ec45" category="inline-link-macro">開始建立磁碟區</block>
+  <block id="0ddd57362a29de92618e7d7d2bbf5cd4" category="paragraph"><block ref="8d370122f83467764fea492e485dddbb" category="inline-link-macro-rx"></block>。</block>
+  <block id="ce21e7ae4271271294ccbf54c8fd6864" category="summary">NetApp以多種方式支援Cloud Manager。我們全年無休提供豐富的免費自助支援選項、例如知識庫（KB）文章和社群論壇。您的支援註冊包括透過網路票證提供遠端技術支援。</block>
+  <block id="fabfc25ef8996fd90836e58a4c0b26b6" category="doc">取得協助</block>
+  <block id="51719eefc68685ac0e2a11057a44b8be" category="paragraph">NetApp以多種方式支援Cloud Manager及其雲端服務。我們全年無休提供豐富的免費自助支援選項、例如知識庫（KB）文章和社群論壇。您的支援註冊包括透過網路票證提供遠端技術支援。</block>
+  <block id="07d41912a6ab6b97216f8cf89e93205c" category="section-title">自我支援</block>
+  <block id="5e4b821a1a82558dead1ef6961e90666" category="paragraph">這些選項可供免費使用、一天24小時、一週7天：</block>
+  <block id="19111351b69b6b15668130b38b7f6038" category="inline-link">知識庫</block>
+  <block id="fd6bb4fa1ad0caeedd6782d92cc54ea3" category="list-text"><block ref="fd6bb4fa1ad0caeedd6782d92cc54ea3" category="inline-link-rx"></block></block>
+  <block id="76b571fb5edea1c1994fa0ff01f7b1e2" category="paragraph">請搜尋Cloud Manager知識庫、找出有助於疑難排解問題的文章。</block>
+  <block id="14526abd8bda5af347775025cd5342cf" category="inline-link">社群</block>
+  <block id="410fdb9caa9c64da2ff3f88f4836960d" category="list-text"><block ref="410fdb9caa9c64da2ff3f88f4836960d" category="inline-link-rx"></block></block>
+  <block id="7f3490343cad8dc3bfdb72dd5d957e8d" category="paragraph">加入Cloud Manager社群、追蹤後續討論或建立新討論。</block>
+  <block id="5b6cf869265c13af8566f192b4ab3d2a" category="list-text">文件</block>
+  <block id="3c313458d6e15dd2c4336e47118d0a8f" category="paragraph">您目前正在檢視的Cloud Manager文件。</block>
+  <block id="80b1b0d2b1ebf2b3cba2d25759801afd" category="list-text">mailto：ng-cloudmanager-feedback@netapp.com [意見反應電子郵件]</block>
+  <block id="bff60abbc46aceed0f73a3a4f6cfb123" category="paragraph">我們非常重視您的意見。提交意見反應、協助我們改善Cloud Manager。</block>
+  <block id="0659d428df833a806e29e65e632d380a" category="section-title">NetApp支援</block>
+  <block id="c91b5a63849b8d2db01014ed33192735" category="paragraph">除了上述的自我支援選項、您也可以與NetApp支援工程師合作、在您啟動支援之後解決任何問題。</block>
+  <block id="6c08c57e382a25a778455184cd9b1a4a" category="list-text">在Cloud Manager中、按一下*「說明」&gt;「支援」*。</block>
+  <block id="f5052c65917d7341726235d4d4941461" category="list-text">在「Technical Support（技術支援）」下選擇可用的選項之一：</block>
+  <block id="bece28b158ab337d9ed24b00d7d02cc7" category="list-text">按一下*致電我們*以尋找NetApp技術支援的電話號碼。</block>
+  <block id="efe81cff8e6f47ec59ef94167b76bf5a" category="list-text">按一下「*開啟問題*」、選取其中一個選項、然後按一下「*傳送*」。</block>
+  <block id="cbb1040836732e478409dacf7e45171a" category="paragraph">NetApp代表將審查您的案例、並盡快回覆您。</block>
+  <block id="8f6f9937d2a2acb76e352fb5e9dfff19" category="summary">您可以從 Cloud Volumes Service Cloud Manager 移除適用於 Google Cloud 訂閱的功能、以及所有現有的磁碟區。磁碟區不會刪除、只會從 Cloud Manager 介面移除。</block>
+  <block id="ea4e50481c541cefaed626458af5901f" category="doc">從 Cloud Volumes Service Cloud Manager 移除</block>
+  <block id="b2639f031018ddb46e5517acac1b12ef" category="admonition">不 Cloud Volumes Service 支援從 Cloud Manager 刪除您的 for Google Cloud 訂閱。您只能透過 Google Cloud Console 執行此作業。</block>
+  <block id="6c970f68c7cf5a446d127ac3ab6d72f7" category="list-text">開啟工作環境。</block>
+  <block id="d41d8cd98f00b204e9800998ecf8427e" category="inline-image-macro"></block>
+  <block id="c723db2b353490931b5febeb5b3ec637" category="list-text">按一下 <block ref="a5c9b85c9e509567688aed8106bc419c" category="inline-image-macro-rx" type="image"></block> 按一下頁面頂端的按鈕、然後按一下「 * 移除 Cloud Volumes Service 此功能 * 」。</block>
+  <block id="d6781b097f0c80fef5a0f286b314592a" category="list-text">在確認對話方塊中、按一下 * 移除 * 。</block>
+  <block id="5b049ba81786d3cb662b3737cb8dbf9d" category="summary">適用於 Google Cloud 的 NetApp Cloud Volumes Service 解決方案可讓您快速新增多重傳輸協定工作負載、以及建置及部署 Windows 和 UNIX 應用程式。</block>
+  <block id="e946962d2bea46b9a982a912efacd934" category="doc">深入瞭 Cloud Volumes Service 解適用於 Google Cloud 的功能</block>
+  <block id="be01a357ae2c9752875b5385c732b017" category="section-title">主要功能</block>
+  <block id="23b980511a5ced3b4103908bdb170f43" category="list-text">在內部部署與 Google Cloud 之間移轉資料。</block>
+  <block id="97672826879203835fb8d5d5635b629f" category="list-text">在數秒內配置 1 至 100 TiB 的磁碟區。</block>
+  <block id="684d4a33eb829a2bc82fd1070b5a3d1e" category="list-text">多重傳輸協定支援（您可以建立 NFS 或 SMB Volume ）。</block>
+  <block id="7ae2f6cdaa02d5b8678d14f3f489a073" category="list-text">利用自動化且有效率的快照來保護資料。</block>
+  <block id="17872268d34a8da9354d5922e34fce78" category="list-text">利用快速複製來加速應用程式開發。</block>
+  <block id="20b4f77bd00b4f63a49ec8e08f3bf6a6" category="section-title">成本</block>
+  <block id="251d0a3ac74b0cb370e4a290d007e109" category="paragraph">由適用於 Google Cloud 的 NetApp 所建立的 Volume Cloud Volumes Service 、將由您訂閱服務的費用支付、而非透過 Cloud Manager 。</block>
+  <block id="f200eca2e2bf55c13ad2668dfdc87204" category="paragraph">從 Cloud Volumes Service Cloud Manager 探索適用於 Google Cloud 的地區或磁碟區不需付費。</block>
+  <block id="bf3796a4651f53d9a137d45e05610b30" category="inline-link-macro">在Google Cloud Marketplace中檢視價格</block>
+  <block id="8e1046c4123260638fe451866f95441f" category="paragraph"><block ref="8e1046c4123260638fe451866f95441f" category="inline-link-macro-rx"></block></block>
+  <block id="8c4b25218155a1fdb972f4169855d04f" category="section-title">支援的地區</block>
+  <block id="b781da83c6614728483efd98a6c45ff6" category="inline-link">檢視支援的Google Cloud地區</block>
+  <block id="939e2552f14c2db1e32edf892141ef1f" category="paragraph"><block ref="939e2552f14c2db1e32edf892141ef1f" category="inline-link-rx"></block></block>
+  <block id="8fece025a1a8fef7018449bf104a2527" category="section-title">開始之前</block>
+  <block id="ba1ec04f6bf2ff4dcb3909ab4182292d" category="inline-link">NetApp Cloud Volumes Service for Google Cloud 文件</block>
+  <block id="3e3b8b12f3052c6c4f7e3e489f336477" category="paragraph">Cloud Manager 可探索 Cloud Volumes Service GCP 訂閱和 Volume 的現有功能。請參閱<block ref="8cef80fbd20b45fcd51e638492e90799" category="inline-link-rx"></block> 如果您尚未設定訂閱、</block>
+  <block id="20c404f3ca0633629eee9b1b4ccd6737" category="section-title">取得協助</block>
+  <block id="44812774d63355a78e8078a40c0b3218" category="paragraph">請使用 Cloud Manager 聊天室、瞭解 Cloud Volumes Service Cloud Manager 中有關功能不全的常見問題。</block>
+  <block id="10f5b4e8583801dbea2ede6fbb4e4ae4" category="paragraph">如需 Cloud Volumes Service 有關適用於 Google Cloud 的一般問題、請寄送電子郵件至 NetApp 的 Google Cloud Team ： gcinfo@netapp.com 。</block>
+  <block id="bd32907910f13f745e4c4ad31b8b85f3" category="inline-link-macro">取得支援</block>
+  <block id="8ce70b43ef3817ffad1e3c9c2e6eb7fe" category="paragraph">針對雲端磁碟區的相關技術問題、您可以從 Google Cloud Console 建立技術支援案例。請參閱 <block ref="1229b64310846c261ec2fb9cb0c3c4af" category="inline-link-macro-rx"></block> 以取得詳細資料。</block>
+  <block id="f6bd0d7447ff66cc6b859603a88fbde9" category="section-title">相關連結</block>
+  <block id="8f27ddb27510b2f60749b9cc933bb52c" category="inline-link">NetApp Cloud Central ： Cloud Volumes Service 適用於 Google Cloud 的解決方案</block>
+  <block id="b3a639154f19df26c3f5d0646c183067" category="list-text"><block ref="b3a639154f19df26c3f5d0646c183067" category="inline-link-rx"></block></block>
+  <block id="4025377504ab93e000f14fb259cf7ed8" category="list-text"><block ref="4025377504ab93e000f14fb259cf7ed8" category="inline-link-rx"></block></block>
+  <block id="83472337cbb57099afa660a35a9c3772" category="summary">您可以在儲存需求變更時管理現有的磁碟區。您可以檢視、編輯、還原及刪除磁碟區。</block>
+  <block id="9038e7cfcfe9bb9df9afd31371070be8" category="doc">管理現有磁碟區</block>
+  <block id="51c267e93c101971f1edda68c933c864" category="list-text">將游標暫留在磁碟區上。</block>
+  <block id="f102d2437687d23a5ac4fb68ea34668f" category="inline-image-macro">Volume Hover 功能表的快照、可讓您執行 Volume 工作</block>
+  <block id="12618a0cf16fe919277e98ec9d44a180" category="paragraph"><block ref="12618a0cf16fe919277e98ec9d44a180" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="75ab567efb1db447b59b0343c1a2ceb3" category="list-text">管理您的磁碟區：</block>
+  <block id="eaeb30f9f18e0c50b178676f3eaef45f" category="cell">工作</block>
+  <block id="004bf6c9a40003140292e97330236c53" category="cell">行動</block>
+  <block id="289d57ca7886b8016f08f4d17ad68a55" category="cell">檢視磁碟區的相關資訊</block>
+  <block id="1a75d1d5ebc6d526f309bba66a6b717c" category="cell">按一下 * 資訊 * 。</block>
+  <block id="a262a83ffe24815a6e18b8655e7c9d3c" category="cell">編輯磁碟區（包括 Snapshot 原則）</block>
+  <block id="4a1938d0e423380a1497b6177cf5dc1c" category="list-text">按一下 * 編輯 * 。</block>
+  <block id="13f2f059150e745212f31d522267cd21" category="list-text">修改磁碟區的內容、然後按一下 * 更新 * 。</block>
+  <block id="57ad6d7575a56679decf17fe96fcf1d0" category="cell">取得 NFS 或 SMB 掛載命令</block>
+  <block id="ae21b5c5fb2e9febee97efa2eb6b9285" category="list-text">按一下 * 掛載磁碟區 * 。</block>
+  <block id="8f636e3ecab79b837953c9b370f79329" category="list-text">按一下 * 複製 * 以複製命令。</block>
+  <block id="7037507985b932c715517fcf78ae11e3" category="cell">隨需建立 Snapshot 複本</block>
+  <block id="24f7235ff22dc3892828c08842e689a8" category="list-text">按一下 * 建立 Snapshot 複本 * 。</block>
+  <block id="4e421f73920c619b2a88e35f954c3429" category="list-text">視需要變更名稱、然後按一下「 * 建立 * 」。</block>
+  <block id="f8e9baca287188400b353f0fe39c789e" category="cell">將磁碟區更換為 Snapshot 複本的內容</block>
+  <block id="e837b92d7195c8af36a1e16d5b98647e" category="list-text">按一下 * 「將磁碟區還原為快照 * 」。</block>
+  <block id="5eb4305250870db39b1ce1fef395849e" category="list-text">選取 Snapshot 複本、然後按一下 * 還原 * 。</block>
+  <block id="7b364050ccd47e83ca87e25526786072" category="cell">刪除 Snapshot 複本</block>
+  <block id="7e026074df0bbceb5332d6d0fcfff97d" category="list-text">按一下 * 刪除 Snapshot 複本 * 。</block>
+  <block id="00a6e5d778d81fd35251dad7b72cbd9c" category="list-text">選取快照、然後按一下 * 刪除 * 。</block>
+  <block id="17261ee2157a48b4bfa8bffabc397f40" category="list-text">當系統提示您確認時、請再次按一下 * 刪除 * 。</block>
+  <block id="8e9a64bda9d21f945b6489df2e7946e1" category="cell">刪除 Volume</block>
+  <block id="e7d176ac7539a52a08943f65ecc19e32" category="list-text">從所有用戶端卸載 Volume ：</block>
+  <block id="23394565644d9607267c2577190c4654" category="list-text">在 Linux 用戶端上、請使用「 umount 」命令。</block>
+  <block id="b70c71384dfeac0e536c343872f2fb55" category="list-text">在 Windows 用戶端上、按一下 * 中斷網路磁碟機 * 。</block>
+  <block id="150cd3111dfd7ae68aaeb429e7e50847" category="list-text">選取磁碟區、然後按一下 * 刪除 * 。</block>
+  <block id="a87e9e2d6f69725c3669d99fad70371d" category="list-text">再按一下 * 刪除 * 以確認。</block>
+  <block id="30d965eef5ba25c6b9998ae38270b43e" category="doc">法律聲明</block>
+  <block id="e9c44bbfd795a5d63d74c6a77afee70d" category="paragraph">法律聲明提供版權聲明、商標、專利等存取權限。</block>
+  <block id="6016a2b341113bf496b719905398ecd2" category="section-title">版權</block>
+  <block id="09e95b77ffe81fe465a83ba99efad5c8" category="paragraph"><block ref="09e95b77ffe81fe465a83ba99efad5c8" category="inline-link-rx"></block></block>
+  <block id="126a02652da6de02962cf1b654fd6376" category="section-title">商標</block>
+  <block id="c4ce4761e466527d26b3e3d5ed1006fd" category="paragraph">NetApp 、 NetApp 標誌及 NetApp 商標頁面上列出的標章均為 NetApp 、 Inc. 的商標。其他公司與產品名稱可能為其各自所有者的商標。</block>
+  <block id="7aa531e9acfe2b98e34d2c92fe9846ff" category="paragraph"><block ref="7aa531e9acfe2b98e34d2c92fe9846ff" category="inline-link-rx"></block></block>
+  <block id="be89498d2f8a22ce47c02ba9795fe2af" category="section-title">專利</block>
+  <block id="d0b19d36be2c5f16e9aef46c8a452d3d" category="paragraph">如需最新的 NetApp 擁有專利清單、請參閱：</block>
+  <block id="d7f1fbcf9ce4e42f705add574d262b2c" category="paragraph"><block ref="d7f1fbcf9ce4e42f705add574d262b2c" category="inline-link-rx"></block></block>
+  <block id="56c34c6410dd45c5cec44149ad0ce037" category="section-title">隱私權政策</block>
+  <block id="fc248f74f5e36542f7f5627b8610e9a3" category="paragraph"><block ref="fc248f74f5e36542f7f5627b8610e9a3" category="inline-link-rx"></block></block>
+  <block id="c0227cef6f07a8cd2ac72f2945b031aa" category="section-title">開放原始碼</block>
+  <block id="9b73989307c1975dfa4d5e1581e4afe8" category="paragraph">通知檔案提供有關 NetApp 軟體所使用之協力廠商版權與授權的資訊。</block>
+  <block id="4940124e8487cb4ea36f1511a195cf66" category="inline-link-macro">Cloud Manager 3.9 注意事項</block>
+  <block id="c069fcc68c5dfa73ccc99924c836cae9" category="paragraph"><block ref="c069fcc68c5dfa73ccc99924c836cae9" category="inline-link-macro-rx"></block></block>
+  <block id="547aa8c8440b20c20efd24ce745a278e" category="summary">在Cloud Volumes Service Cloud Manager中瞭解適用於Google Cloud的更新功能。</block>
+  <block id="490414e0366b091220802d406e52c076" category="doc">新功能</block>
+  <block id="a633f0835832cc75f5a83248a8aa2ba8" category="section-title">2020年9月9日</block>
+  <block id="8751230100c974b7c3ae5adae22c0f7c" category="section-title">支援Cloud Volumes Service for Google Cloud</block>
+  <block id="9e376b2341c224a05e31bf464f6a9a2c" category="paragraph">您現在Cloud Volumes Service 可以直接從Cloud Manager管理適用於Google Cloud的功能：</block>
+  <block id="69a622f3bb660c4a470d3d96f19e20be" category="list-text">設定及建立工作環境</block>
+  <block id="bd596d5c57d76a146d26208cd81913fb" category="list-text">為Linux和UNIX用戶端建立及管理NFSv3和NFSv4.1磁碟區</block>
+  <block id="104e3ba4c577e4723ae2db3aaab91044" category="list-text">為Windows用戶端建立及管理SMB 3.x磁碟區</block>
+  <block id="f3f6d908876888ed386cf496a0f26e7c" category="list-text">建立、刪除及還原Volume快照</block>
+  <block id="5876c30cdb96c38d4cc2497feffde111" category="summary">您可以為每個磁碟區建立快照原則、以便從較早的時間恢復或還原磁碟區的全部內容。您也可以視需要建立雲端磁碟區的隨需快照。</block>
+  <block id="bf7d38473ac37a5a084d9d1f21a4002c" category="doc">管理雲端磁碟區快照</block>
+  <block id="2530ad97c013f5d8d9c69004a4e7ee67" category="section-title">建立隨需快照</block>
+  <block id="377828daafe235f0aafbc80626a92a44" category="paragraph">如果您想要以目前的 Volume 狀態建立快照、可以建立雲端磁碟區的隨需快照。</block>
+  <block id="bb06f880c297b34268ea12d1602837bb" category="list-text">將游標暫留在磁碟區上、然後按一下 * 建立快照複本 * 。</block>
+  <block id="f6abfc5070e6bcda72d651ecad906489" category="list-text">輸入快照的名稱、或使用自動產生的名稱、然後按一下 * 「 Create 」（建立） * 。</block>
+  <block id="2209a54e85463699d44111ce0c0a236a" category="inline-image-macro">選取要還原至新磁碟區的快照複本的快照快照</block>
+  <block id="f989d58bb69770d84593492ff494f094" category="paragraph"><block ref="f989d58bb69770d84593492ff494f094" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="6459290d6e095d59cc3f6660e9e9ba67" category="paragraph">快照隨即建立。</block>
+  <block id="e5424232e5c3cbc0b77accf10fc38470" category="section-title">建立或修改快照原則</block>
+  <block id="4fec62b4aa71f93e589147ab337d3a3a" category="paragraph">您可以視需要為雲端磁碟區建立或修改快照原則。您可以在建立磁碟區或編輯磁碟區時、從「 Snapshot Policy_ 」索引標籤定義快照原則。</block>
+  <block id="e7869c8f9e6db9876598b0ae71814661" category="list-text">將游標暫留在磁碟區上、然後按一下 * 編輯 * 。</block>
+  <block id="13936fb1e8cab81aa5c50bc2a7991029" category="list-text">從「 _Snapshot Policy_ 」索引標籤、將「啟用快照」滑桿移到右側。</block>
+  <block id="6fcb64b90c6b69153987bd2a5934500e" category="list-text">定義快照排程：</block>
+  <block id="0c8182bf573f25aa41ea1b97ef990daf" category="list-text">選擇頻率： * 每小時 * 、 * 每日 * 、 * 每週 * 或 * 每月 *</block>
+  <block id="95f0f96e7a13d18ec4b4cc683cac354a" category="list-text">選取您要保留的快照數目。</block>
+  <block id="d83574476baea70ecfe273fcb08a92b1" category="list-text">選取應拍攝快照的日期、小時和分鐘。</block>
+  <block id="23643dc2c2630e1cd190257bc60fe38e" category="inline-image-macro">已設定的 Snapshot 原則快照</block>
+  <block id="a88d31c8b3d36cada7ac3f645dbdd24b" category="paragraph"><block ref="a88d31c8b3d36cada7ac3f645dbdd24b" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="559ab4c9d098436cfbf33391cfeecf7f" category="list-text">按一下「 * 新增磁碟區 * 」或「 * 更新磁碟區 * 」以儲存原則設定。</block>
+  <block id="c97414d9e21703e37b875d9f1d8dfb74" category="section-title">停用快照原則</block>
+  <block id="f2dd955514c60fad76437ba0f7550a7f" category="paragraph">您可以停用快照原則、在短時間內停止建立快照、同時保留您的快照原則設定。</block>
+  <block id="7a732251673ef876881925c7f8facaa0" category="list-text">從「 _Snapshot Policy_ 」索引標籤、將「啟用快照」滑桿移到左邊。</block>
+  <block id="39e4d7ad6415acefc633ce23184ef5d5" category="inline-image-macro">處於停用位置的快照原則按鈕快照</block>
+  <block id="bcbed048badd671015bc9a700a9ee184" category="paragraph"><block ref="bcbed048badd671015bc9a700a9ee184" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="fc220eb1d5572bf36eac03104db8fd04" category="list-text">按一下 * 更新磁碟區 * 。</block>
+  <block id="0932c32fdddde924b270a62a2ae2cd0e" category="paragraph">當您想要重新啟用快照原則時、請將啟用快照滑桿移到右側、然後按一下 * 更新磁碟區 * 。</block>
+  <block id="efb44cfe1d5b8d9954ea045385675c66" category="section-title">刪除快照</block>
+  <block id="01270341151a1d822c548abc778b27ea" category="paragraph">您可以刪除不再需要的快照。</block>
+  <block id="7552d0e963760ace00d752fb123989a3" category="list-text">將游標暫留在磁碟區上、然後按一下 * 刪除 Snapshot 複本 * 。</block>
+  <block id="b8d7a446f6dbe49089b4c415dc2e8037" category="list-text">從下拉式清單中選取快照、然後按一下 * 刪除 * 。</block>
+  <block id="9c673ecd9d0dddf896cc55f2127056d8" category="inline-image-macro">選取要刪除之快照複本的快照快照</block>
+  <block id="41a98f64ec73ced976239a7861d67e1c" category="paragraph"><block ref="41a98f64ec73ced976239a7861d67e1c" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="e1899e67aa8aec45bef5dc600fc2ae14" category="list-text">在確認對話方塊中、按一下 * 刪除 * 。</block>
+  <block id="873e0406fa26efb41adbaa13d68a75aa" category="section-title">將快照還原至新磁碟區</block>
+  <block id="3d1f395f071b82aa2483997ed6a950f4" category="paragraph">您可以視需要將快照還原至新磁碟區。</block>
+  <block id="4610617cfe3d68ad951e3cbe5838d48f" category="list-text">將游標暫留在磁碟區上、然後按一下 * 「還原至新磁碟區」 * 。</block>
+  <block id="f00381a2986fdab955681fe6c60ce7ed" category="list-text">從下拉式清單中選取您要用來建立新磁碟區的快照。</block>
+  <block id="a5e417c4429a4d261016484925d60eed" category="list-text">輸入新磁碟區的名稱、然後按一下 * 還原 * 。</block>
+  <block id="12fac297323644da3ff2e0153eeb71e2" category="paragraph"><block ref="12fac297323644da3ff2e0153eeb71e2" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="ca4c6ba75b4d9ae132e9e540b993e8c8" category="paragraph">磁碟區是在工作環境中建立。</block>
+  <block id="318099df58f11dc94302fadee00fb7b2" category="list-text">如果您需要變更任何 Volume 屬性、例如 Volume 路徑或服務層級：</block>
+  <block id="2c55e8dc4183c50c0009f5d04bc6a083" category="list-text">進行變更、然後按一下 * 更新磁碟區 * 。</block>
+  <block id="ff74d9d1d3fca1c7a3ef1f4d83f84caa" category="inline-link-macro">掛載雲端 Volume</block>
+  <block id="f4b43cd0d32ccc6ae1ae7fd55ec60faf" category="paragraph">繼續 <block ref="711ebf19377f2c6ac55625f313ee444a" category="inline-link-macro-rx"></block>。</block>
+  <block id="597907fb22ffd6d5d99abe19205161d6" category="summary">請依照下列步驟快速入門、或依照連結取得完整詳細資料。</block>
+  <block id="04476610d425410da3c197a32de6a851" category="doc">Google Cloud的功能快速入門Cloud Volumes Service</block>
+  <block id="51854a19c4259f68487a6142b24a127b" category="paragraph">從 Google 啟用 Cloud Volumes Service 適用於 GCP API 的功能、讓 Cloud Manager 能夠管理訂閱和雲端磁碟區。</block>
+  <block id="95b3ec34634e3102d6acf0de3fc1d2fc" category="inline-link-macro">瞭解如何啟用API</block>
+  <block id="09343065e2ebc25d01e7ea8194218f67" category="paragraph"><block ref="9726afe0fed23e53ca72118b2c823abb" category="inline-link-macro-rx"></block>。</block>
+  <block id="b37f2372acf4547f9f0ef25572764639" category="paragraph">從Google建立服務帳戶和角色、以便Cloud Manager存取Cloud Volumes Service 您的適用於Google Cloud的支援功能。</block>
+  <block id="46b491767cd12d81f9bf9593f5a96cf7" category="inline-link-macro">瞭解如何設定服務帳戶</block>
+  <block id="28d2901977b5fc7c248b5b66937c0876" category="paragraph"><block ref="73d99899af631bbb52840dc78039ca4d" category="inline-link-macro-rx"></block>。</block>
+  <block id="dd50973260de02b147ef0408f27d7b00" category="paragraph">在 Cloud Manager 中、按一下 * 新增工作環境 * &gt; * Google Cloud * &gt; * Cloud Volumes Service S供 * 、然後提供服務帳戶和 Google Cloud 專案的詳細資料。</block>
+  <block id="328958ba41a282fb8b8b971eb10845bd" category="inline-link-macro">瞭解如何建立工作環境</block>
+  <block id="75aec57e5da1cc40dc30b7d1be476ab4" category="paragraph"><block ref="87d286565b204dd2a8d4bf83463a6fe9" category="inline-link-macro-rx"></block>。</block>
+  <block id="a8867a21a7fa1494ec13e3530d19b978" category="summary">Cloud Manager需要透過Cloud Volumes Service Google Cloud服務帳戶存取不必要的API及適當權限。</block>
+  <block id="40b96cc305f26bed96812c2920065f5d" category="doc">設定Google Cloud</block>
+  <block id="c0d5abaa52a2adc8b50cf6748143a972" category="section-title">啟用 Cloud Volumes Service 此功能</block>
+  <block id="db680318754971180f12e167ae5f6325" category="paragraph">在 Google Cloud Shell 中、執行下列命令來啟用 Cloud Volumes Service 此功能：</block>
+  <block id="c4c67ba5b51827067dc9257fb3040a30" category="paragraph">「 gCloud --project =&lt;my-cs-project &gt; 服務可支援 cloudvolumesgcp-api.netapp.com`</block>
+  <block id="ec8725380aa2f688c9b9d45557c44600" category="section-title">設定服務帳戶</block>
+  <block id="91066c1fc41c9558d9b205e32bcfb6ad" category="paragraph">完成下列工作、讓Cloud Manager能夠存取您的Google Cloud專案：</block>
+  <block id="cb939d621f46e6895da8fb3a52fbcf83" category="list-text">建立新的服務帳戶</block>
+  <block id="172cabf35e2da2e485725633d4544c4b" category="list-text">將新的服務帳戶成員新增至專案、並指派給專案特定的角色（權限）</block>
+  <block id="b8da17ea9f82689a4cc87ac02b337328" category="list-text">為用於驗證 Google 的服務帳戶建立並下載金鑰配對</block>
+  <block id="ab6fcc124e86604f6bab5da13aaea51a" category="inline-link">前往「服務帳戶」頁面</block>
+  <block id="7dc4b63dc4834aecd751b91ed3de3d39" category="list-text">在Google Cloud主控台中、<block ref="72863ecd427c906452e0c3d21111bdac" category="inline-link-rx"></block>。</block>
+  <block id="e4ca5adc5a86c098ce9d6bd2f42dc178" category="list-text">按一下 * 選取專案 * 、選擇您的專案、然後按一下 * 開啟 * 。</block>
+  <block id="bdac2dc9c1216cbabea4f0c3c6dbd7eb" category="list-text">按一下「*建立服務帳戶*」。</block>
+  <block id="81c36eb6a7aa6110855ae09fd80381ab" category="list-text">輸入服務帳戶名稱（易記的顯示名稱）和說明。</block>
+  <block id="66335d9ae4276106da10a758c0c3c8b7" category="paragraph">Cloud Console會根據此名稱產生服務帳戶ID。如有必要、請編輯ID：您稍後無法變更ID。</block>
+  <block id="8971b16610cb4efa4b6c83e3ad176094" category="list-text">若要立即設定存取控制項、請按一下「*建立*」、然後從頁面底部按一下「*完成*」、然後繼續下一步。</block>
+  <block id="4bd66ea95ac91bc82cdc097c3614f96c" category="list-text">從「 _IAM 」頁面按一下「 * 新增 * 」、然後填寫「 _Add Memu__ 」頁面中的欄位：</block>
+  <block id="91193149b6c0dbfe2760ec8c62b016e7" category="list-text">在 New Members （新成員）欄位中、輸入完整的服務帳戶 ID 、例如 user1-service-account-cvs@project1.iam.gserviceaccount.com 。</block>
+  <block id="e6915ea331526f7f3221d5b019733157" category="list-text">新增以下角色：</block>
+  <block id="ea34dd9c3c884049d43a2ee08126a1e2" category="list-text">_NetApp Cloud Volumes 管理 _</block>
+  <block id="a69f1e2412a22a1f3153b3553fb2a1d1" category="list-text">運算網路檢視器 _</block>
+  <block id="4cc186df234138a57b2e8c5d8e5f7f8d" category="list-text">按一下「 * 儲存 * 」。</block>
+  <block id="1baa368f450d37450a1cb47c6b7dd320" category="list-text">按一下「服務帳戶名稱」、然後從「服務帳戶詳細資料」頁面、按一下「*新增金鑰&gt;建立新金鑰*」。</block>
+  <block id="744132d4bfa3718f3315f6d3187cba60" category="list-text">選擇 * JSON* 作為金鑰類型、然後按一下 * 「 Create * （建立 * ）」。</block>
+  <block id="ef17d662e8cfc44a88102effe9136080" category="paragraph">按一下「 * 建立 * 」、就會產生新的公開 / 私密金鑰配對、並下載至您的系統。它是唯一的私密金鑰複本。請安全地儲存此檔案、因為它可用於驗證您的服務帳戶。</block>
+  <block id="0eff7de92af8c65ac32bf20be9393a92" category="paragraph">如需詳細步驟、請參閱Google Cloud文件：</block>
+  <block id="7ef475b3aa654a4c77b576b7b693b979" category="inline-link-macro">建立及管理服務帳戶</block>
+  <block id="fc4ab4403cd96c67fe73442b8080f683" category="list-text"><block ref="fc4ab4403cd96c67fe73442b8080f683" category="inline-link-macro-rx"></block></block>
+  <block id="b666e33c85ae74bc39da9e25479b2d5b" category="inline-link-macro">授予、變更及撤銷資源存取權</block>
+  <block id="543336bbad88b5d4f6aab813afbcd38f" category="list-text"><block ref="543336bbad88b5d4f6aab813afbcd38f" category="inline-link-macro-rx"></block></block>
+  <block id="17337f696c024b9e31f4396f97e2d0b0" category="inline-link-macro">建立及管理服務帳戶金鑰</block>
+  <block id="29d3428cb13e4cac2f40807938da5dc8" category="list-text"><block ref="29d3428cb13e4cac2f40807938da5dc8" category="inline-link-macro-rx"></block></block>
+  <block id="3c10116b37b407ac79092a38ffb292e4" category="summary">在您透過NetApp技術支援開啟支援案例之前、您必須先將NetApp支援網站帳戶新增至Cloud Manager、然後註冊以取得支援。</block>
+  <block id="42748df9eaa0be17ddc5cc1593cf57ab" category="doc">註冊以取得支援</block>
+  <block id="aeaeee19a7c393222e407a525cf01991" category="section-title">新增一個NSS帳戶</block>
+  <block id="de2241fea60d98698faaa196ff73ee80" category="paragraph">「支援儀表板」可讓您從單一位置新增及管理所有NetApp支援網站帳戶。</block>
+  <block id="5be2593b5948f30a15179a32daa73ee2" category="inline-link">註冊一項</block>
+  <block id="14b05cf61f1aba58d38b393e69b69538" category="list-text">如果您還沒有 NetApp 支援網站帳戶、<block ref="0a8e82436ea73fe635862cfba3acf101" category="inline-link-rx"></block>。</block>
+  <block id="0046efb3377274ff3215d4b30269809e" category="list-text">在Cloud Manager主控台右上角、按一下「說明」圖示、然後選取*「支援」*。</block>
+  <block id="b50f0a46135bcb7083b1f2f82032fc26" category="inline-image-macro">「說明」功能表的快照、其中「支援」是第一個列出的選項</block>
+  <block id="868d9aa88f16ea923af1d15eac5d2647" category="paragraph"><block ref="868d9aa88f16ea923af1d15eac5d2647" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="d17d6b5dafebab6b7659da8850737e70" category="list-text">按一下「*」「nss管理」&gt;「新增nssAccount」*。</block>
+  <block id="8aaf101e623c543c7eef3c65f6233366" category="list-text">出現提示時、按一下*繼續*以重新導向至Microsoft登入頁面。</block>
+  <block id="19d089db572ee6a1e154a0c9c9e57bfd" category="paragraph">NetApp使用Microsoft Azure Active Directory做為身分識別供應商、提供專為支援與授權所設計的驗證服務。</block>
+  <block id="465ec6d5eafa3524c948c99d8bfcd306" category="list-text">在登入頁面上、提供您的NetApp支援網站註冊電子郵件地址和密碼、以執行驗證程序。</block>
+  <block id="f5fb4199485234c409525f430b737010" category="paragraph">此動作可讓Cloud Manager使用您的NSS帳戶。</block>
+  <block id="b4c6a2f33e7b2a38495546b8d5cd8e84" category="paragraph">附註：帳戶必須是客戶層級的帳戶（非來賓帳戶或臨時帳戶）。</block>
+  <block id="fc65ebd4739f2f8ca46062a8280faea9" category="section-title">註冊您的帳戶以取得支援</block>
+  <block id="3e080914efe0d0ca025439fbb68d437f" category="paragraph">支援註冊可從支援儀表板的Cloud Manager取得。</block>
+  <block id="fb07bf6b7698dbe934b8b2164d915484" category="list-text">在* Resources（資源）*選項卡中，單擊* Register for Support*（註冊以獲得支持*）。</block>
+  <block id="392fb0270d0d84dbc3fdf8c67da1e5ad" category="list-text">選取您要登錄的NSS認證、然後按一下「*登錄*」。</block>
+  <block id="1110fd6ec9eee21c0b646be4552ca0e0" category="summary">Cloud Manager 可讓您根據 Cloud Volumes Service 您的需求來建立雲端磁碟區、以供 Google Cloud 訂閱。建立磁碟區之後、請取得相關的掛載命令、以便將磁碟區掛載到用戶端。</block>
+  <block id="9be5a2eae9bab39aee7d0161c137cd43" category="doc">建立及掛載磁碟區</block>
+  <block id="1c27e11c5e65b93611e6f5ce640f8184" category="section-title">建立磁碟區</block>
+  <block id="0083dcd597da7bd592240dc28b767d85" category="paragraph">您可以在 Cloud Volumes Service Google Cloud 的全新或現有版本中建立 NFS 或 SMB Volume 。雲端磁碟區目前支援適用於 Linux 和 UNIX 用戶端的 NFSv3 和 NFSv4.1 、以及適用於 Windows 用戶端的 SMB 3.x 。</block>
+  <block id="135b308ed83c53f1516b7c754566d1c4" category="list-title">開始之前</block>
+  <block id="ce18c1db074bb9e5c1d0abfee30e098f" category="list-text">如果您想在 GCP 中使用 SMB 、則必須設定 DNS 和 Active Directory 。</block>
+  <block id="f153caba90fc4134024f9b4c3eeadea8" category="list-text">規劃建立 SMB Volume 時、您必須擁有可連線的 Windows Active Directory 伺服器。建立磁碟區時、您將輸入此資訊。此外、請確定管理使用者能夠在指定的組織單位（ OU ）路徑中建立機器帳戶。</block>
+  <block id="3a9d2e9f2ef6e95de617c14d2e4a4ef4" category="list-text">選取工作環境、然後按一下 * 新增 Volume * 。</block>
+  <block id="a88cc7492eb95c6a27a508257cb9c7d3" category="list-text">在「詳細資料與位置」頁面中、輸入有關磁碟區的詳細資料：</block>
+  <block id="0dcbdc7a88267f1af3dfbb016b0e988b" category="list-text">輸入磁碟區名稱。</block>
+  <block id="0aa26752c8275d7c2136cfa844d9bed7" category="list-text">指定 1 TiB （ 1024 GiB ）到 100 TiB 範圍內的大小。</block>
+  <block id="18f39858c9507476f461154189c305ce" category="inline-link-macro">深入瞭解已分配容量</block>
+  <block id="8499bf1a4d0783e1946d0183d50b1a5e" category="paragraph"><block ref="1fccff2dc87880e023e422db2a91ac16" category="inline-link-macro-rx"></block>。</block>
+  <block id="d5d2b1f89ce09d0f5810f56209020adc" category="list-text">指定服務層級： Standard 、 Premium 或 Extreme 。</block>
+  <block id="4de85cc4f312ff19184ba3b85367874c" category="inline-link-macro">深入瞭解服務層級</block>
+  <block id="06caf620f227e374f23ebcbd61a320c1" category="paragraph"><block ref="4a30f1eccd0eaf46b75e9787d1a9dd0e" category="inline-link-macro-rx"></block>。</block>
+  <block id="b120226bff5ab9d91c0335fcef4d25a9" category="list-text">選取 Google Cloud 區域。</block>
+  <block id="0ad33c22b0bf62f904c40c679ed4bb71" category="list-text">選取可存取磁碟區的 VPC 網路。請注意、 VPC 無法在建立磁碟區之後進行變更或編輯。</block>
+  <block id="e779fbfdff90085c8a49c2e711c97ce8" category="inline-image-macro">提供名稱、大小和服務層級的 Volume 詳細資料頁面快照</block>
+  <block id="a7bcef8a07fad7a86f89afe7cb9eec70" category="paragraph"><block ref="a7bcef8a07fad7a86f89afe7cb9eec70" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="0625bfce4701fe75801416f87ede7b10" category="list-text">在「傳輸協定」頁面中、選取 NFS 或 SMB 、然後定義詳細資料。NFS 和 SMB 的必要項目如下所示。</block>
+  <block id="547a5c5cf72eabae707b477139de2cdd" category="list-text">NFS ：</block>
+  <block id="d21a4fe6a8f6a1dfa8736389d4c3476d" category="list-text">在 Volume Path （磁碟區路徑）欄位中、指定掛載磁碟區時所看到的磁碟區匯出名稱。</block>
+  <block id="25f87b20d982949ec8e3e27d03474ba6" category="list-text">視您的需求而定、選取 NFSv3 、 NFSv4.1 或兩者。</block>
+  <block id="971b53e8e70edb4bd2dc46c1e9a5f83b" category="list-text">您也可以建立匯出原則、以識別可存取磁碟區的用戶端。指定：</block>
+  <block id="264754e31d1ff52cdc5aaf133afec15f" category="list-text">使用 IP 位址或無類別網域間路由（ CIDR ）的允許用戶端。</block>
+  <block id="afbfc1582fb1f428d3810c815dfcc309" category="list-text">讀寫或唯讀的存取權限。</block>
+  <block id="4ab55a4fa374ed23333000e2528f27ae" category="list-text">存取傳輸協定（若 Volume 允許 NFSv3 和 NFSSv4.1 存取）、則為使用者所使用的傳輸協定。</block>
+  <block id="c2e80b269feea5b55611a060d02af36b" category="list-text">若要定義其他匯出原則規則、請按一下「 * + 新增匯出原則規則 * 」。</block>
+  <block id="7f705955c40fe9715fd0b0beafc53e4d" category="paragraph">下圖顯示為 NFS 傳輸協定填寫的 Volume （磁碟區）頁面：</block>
+  <block id="7d060f160067a6298515896b28afec14" category="inline-image-macro">快照顯示已填入 NFS Cloud Volumes Service S大批 量的 Volume 頁面。</block>
+  <block id="872560fbd3d800dab72db585b9f3c935" category="paragraph"><block ref="872560fbd3d800dab72db585b9f3c935" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="9558b14c9d59086685b161678bbd5ba3" category="list-text">中小企業：</block>
+  <block id="f3ef9426887f3b6d3605f31188680f8d" category="list-text">在 Volume Path （磁碟區路徑）欄位中、指定掛載磁碟區時所看到的磁碟區匯出名稱、然後按一下 * Continue （繼續） * 。</block>
+  <block id="cd151d721b267c3372dae8aa90bea7b0" category="list-text">如果已設定 Active Directory 、您會看到組態。如果是第一個要設定的磁碟區、但尚未設定 Active Directory 、您可以在「 SMB 連線設定」頁面中啟用 SMB 工作階段加密：</block>
+  <block id="6f16a5f8ff5d75ab84c018adacdfcbb7" category="cell">欄位</block>
+  <block id="b5a7adde1af5c87d7fd797b6245c2a39" category="cell">說明</block>
+  <block id="9d35762d6cb446294ba4226fba0d1eb5" category="cell">DNS 主要 IP 位址</block>
+  <block id="af76d053440af0abdccb0ad361f41e55" category="cell">提供 SMB 伺服器名稱解析的 DNS 伺服器 IP 位址。當參考多個伺服器時、請使用逗號分隔 IP 位址、例如 172.31.25.223 、 172.31.2.74 。</block>
+  <block id="b4a5aaff47ac1aad0a039f0089aac0c6" category="cell">要加入的 Active Directory 網域</block>
+  <block id="c6d55f531a77e880997000897f943785" category="cell">您要 SMB 伺服器加入之 Active Directory （ AD ）網域的 FQDN 。</block>
+  <block id="bb78cf486f48b949ec20d57c3b4b3570" category="cell">SMB 伺服器的 NetBios 名稱</block>
+  <block id="5edfee54ded2748effdab7c474ec6077" category="cell">要建立之 SMB 伺服器的 NetBios 名稱。</block>
+  <block id="a3bbc956ff81e28dd77efaaf4d1c5b30" category="cell">授權加入網域的認證資料</block>
+  <block id="03fa572f48ef7f33b022f609e0553e85" category="cell">具有足夠權限的 Windows 帳戶名稱和密碼、可將電腦新增至 AD 網域內的指定組織單位（ OU ）。</block>
+  <block id="ff309cf3107765153856990e03224d8c" category="cell">組織單位</block>
+  <block id="88f4674929f3577e4ed6ca0ce26d6c95" category="cell">AD 網域中與 SMB 伺服器相關聯的組織單位。預設值為「 CN= 電腦」、用於連線至您自己的 Windows Active Directory 伺服器。</block>
+  <block id="03e6e06b082c189fc87ad9aad3901032" category="paragraph">下圖顯示 SMB 傳輸協定的「 Volume 」（磁碟區）頁面：</block>
+  <block id="a69750d79ae32373cb26af4d76eee484" category="inline-image-macro">快照顯示 SMB Cloud Volumes Service 版的 Volume 頁面已填滿。</block>
+  <block id="396a17f0ed51b9c5c6e2c2d382b9da29" category="paragraph"><block ref="396a17f0ed51b9c5c6e2c2d382b9da29" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="14ec8544f74cfa351aff62abf80e7ce1" category="list-text">如果您要根據現有磁碟區的快照建立磁碟區、請從 Snapshot Name （快照名稱）下拉式清單中選取快照。否則請按一下 * 繼續 * 。</block>
+  <block id="a09c1495afba572d0857c83823cd2bad" category="list-text">在「 Snapshot Policy 」（ Snapshot 原則）頁面中、 Cloud Volumes Service 您可以根據排程來啟用「支援功能」、以建立磁碟區的 Snapshot 複本。您現在可以將選取元移至右側來完成此作業、或稍後再編輯磁碟區以定義快照原則。</block>
+  <block id="ced63c567878ed01730fce043c8ade96" category="inline-link-macro">建立快照原則</block>
+  <block id="e45bbeae66bd2af06ef994ec4e9682b9" category="paragraph">瞭解操作方法 <block ref="4733085e77073b15a79afc35f8d9b896" category="inline-link-macro-rx"></block>。</block>
+  <block id="5e65e2e51d0d291499a42f54730e645c" category="list-text">按一下 * 新增 Volume * 。</block>
+  <block id="45dbe3c136df615d693b80183c277a3b" category="paragraph">新磁碟區會新增至工作環境。</block>
+  <block id="0753d577f87c3ce7385e295a5cc23407" category="paragraph">繼續掛載雲端磁碟區。</block>
+  <block id="45bb1e3eab26b4479c1c1d8bdd6bf2f5" category="section-title">掛載雲端磁碟區</block>
+  <block id="86a3efaabfd178d684bcd98f4cd6434c" category="paragraph">從 Cloud Manager 存取掛載指示、以便將磁碟區掛載至主機。</block>
+  <block id="b80e741400898b02fa02ae6451578a24" category="admonition">使用用戶端所支援的反白傳輸協定/方言。</block>
+  <block id="231483c3df5be28012c03a70cd182671" category="list-text">將游標移到磁碟區上、然後按一下 * 掛載磁碟區 * 。</block>
+  <block id="dc994023cf3cc855f2ced6fe0993f129" category="paragraph">NFS 和 SMB 磁碟區會顯示該傳輸協定的掛載指示。</block>
+  <block id="ca9ddaf06b48350fa016d22a546b3160" category="list-text">將游標暫留在命令上、然後將其複製到剪貼簿、以簡化此程序。只要在命令結尾處新增目的地目錄 / 掛載點即可。</block>
+  <block id="f8b7bb7f28d1f1a0e9534f8d8582d615" category="paragraph">* NFS 範例： *</block>
+  <block id="b814517054080fc81ee838a94a37bc18" category="inline-image-macro">NFS 磁碟區的掛載指示</block>
+  <block id="5c81aee2de731ff9fc139e1be671e308" category="paragraph"><block ref="5c81aee2de731ff9fc139e1be671e308" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="cb3bef40f931522adf1b31bfb5ba4e1b" category="paragraph">「 rsize 」和「 wsize 」選項所定義的最大 I/O 大小為 1048576 、不過對於大多數使用案例、建議使用 65536 。</block>
+  <block id="14207f0f4970c30af3f3b09bc26475c1" category="paragraph">請注意、 Linux 用戶端預設為 NFSv4.1 、除非使用「 VERRS=&lt;NFS_VERON&gt;&gt; 」選項指定版本。</block>
+  <block id="c33a261ec68784a847d41ccecc103bc1" category="paragraph">* 中小企業範例： *</block>
+  <block id="dd92d715112689203a9d21e0c4638b23" category="inline-image-macro">SMB 磁碟區的掛載指示</block>
+  <block id="d837d9033dcef75be4b4e49cdbf1cd31" category="paragraph"><block ref="d837d9033dcef75be4b4e49cdbf1cd31" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="d2db85ec3f1d935da0d928bd1abc4623" category="list-text">依照執行個體的掛載指示來對應網路磁碟機。</block>
+  <block id="8368ae9308b995fd5a75721d106d4ab0" category="paragraph">完成掛載指示中的步驟之後、您已成功將雲端磁碟區掛載至 GCP 執行個體。</block>
+  <block id="07412ee3cf29f80fadf8fe52f687e709" category="summary">如果您變更了DNS伺服器或Active Directory網域、您需要修改Cloud Volumes Service 位於支援區的SMB伺服器、才能繼續將儲存設備提供給用戶端。</block>
+  <block id="cfc8683315c11129a14f7b806a6f699c" category="doc">管理Active Directory組態</block>
+  <block id="69911db82cd6ce5dc7c63d1b33420f3b" category="list-text">按一下 <block ref="a5c9b85c9e509567688aed8106bc419c" category="inline-image-macro-rx" type="image"></block> 按鈕、然後按一下 * 管理 Active Directory * 。</block>
+  <block id="6009cb4ef9aecc48bb7af9c3b4fb92ad" category="paragraph">如果未設定 Active Directory 、您可以立即新增一個 Active Directory 。如果已設定、您可以使用修改或刪除設定 <block ref="a5c9b85c9e509567688aed8106bc419c" category="inline-image-macro-rx" type="image"></block> 按鈕。</block>
+  <block id="fd1f3b127eeb96862e4cde53a7ee6267" category="list-text">指定 SMB 伺服器的設定：</block>
+  <block id="c1ca298a9a9c76ca22ecf23ccaca6448" category="cell">提供 SMB 伺服器名稱解析的 DNS 伺服器 IP 位址。當參考多個伺服器時、請使用逗號分隔 IP 位址、例如 172.31.25.223 、 172.31.2.74 。</block>
+  <block id="4bc62575e91aa40d329c1383c7a4fc46" category="list-text">按一下「 * 儲存 * 」以儲存您的設定。</block>
+  <block id="7ff191df90fac0fa94ab5c2b5101a5e9" category="sidebar">所有Cloud Manager文件</block>
+  <block id="bf5d97d0f930d16c4814a56d0ffddf42" category="sidebar">適用於Google Cloud文件Cloud Volumes Service</block>
+  <block id="7d0ee6fed10d3d4e5c9ee496729ab519" category="sidebar">版本資訊</block>
+  <block id="be11c74c1dd7f307bb80183a90dc2067" category="sidebar">開始使用</block>
+  <block id="06ad314b340900d226b1196e1fe289e9" category="sidebar">快速入門</block>
+  <block id="edbcf53081d21cc9d84e0c1b1c31c425" category="sidebar">建立工作環境</block>
+  <block id="281fd4ddeb5136e8243177da6481be31" category="sidebar">使用適用於Google Cloud的解決方案Cloud Volumes Service</block>
+  <block id="97303bb797c628e0c8d96db52408999b" category="sidebar">移除Cloud Volumes Service</block>
+  <block id="0adc03eac86772ad2c75c8f140be417e" category="sidebar">知識與支援</block>
+  <block id="b2926ec1332a3412430ef48cae1f9bc2" category="sidebar">使用Cloud Volumes Service</block>
+  <block id="813011e2103649bb71f124adedcc10ea" category="sidebar">部落格社群</block>
+  <block id="dd490b81914dd945601e442a41cb4222" category="sidebar">NetApp社群</block>
+  <block id="ff6c37cbc252e306a6b4e390ec13cbc1" category="sidebar">Cloud Central部落格</block>
+  <block id="ad203e818e0c9d7f42f1c260b33875f3" category="sidebar">雲端網路研討會</block>
+</blocks>

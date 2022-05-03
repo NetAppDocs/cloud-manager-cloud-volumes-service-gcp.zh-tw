@@ -1,0 +1,71 @@
+---
+settings:
+  name: Cloud Volumes Service for Google Cloud
+  platform: cloud
+  internal:
+    pdf_enabled: true
+  prod:
+    pdf_enabled: true
+    harmony_enabled: false
+  langs: zh-tw,us-en,ja-jp,zh-cn,ko-kr
+sidebar:
+  entries:
+  - title: 所有Cloud Manager文件
+    url: https://docs.netapp.com/us-en/cloud-manager-family
+  - title: 適用於Google Cloud文件Cloud Volumes Service
+    url: "/index.html"
+  - title: 版本資訊
+    url: "/whats-new.html"
+  - title: 開始使用
+    entries:
+    - title: 深入瞭 Cloud Volumes Service 解適用於 Google Cloud 的功能
+      url: "/concept-cvs-gcp.html"
+    - title: 快速入門
+      url: "/task-quick-start.html"
+    - title: 設定Google Cloud
+      url: "/task-set-up-google-cloud.html"
+    - title: 建立工作環境
+      url: "/task-create-working-env.html"
+  - title: 使用適用於Google Cloud的解決方案Cloud Volumes Service
+    entries:
+    - title: 建立及掛載磁碟區
+      url: "/task-create-volumes.html"
+    - title: 管理現有磁碟區
+      url: "/task-manage-volumes.html"
+    - title: 管理雲端磁碟區快照
+      url: "/task-manage-snapshots.html"
+    - title: 管理Active Directory組態
+      url: "/task-manage-active-directory.html"
+    - title: 移除Cloud Volumes Service
+      url: "/task-remove-working-env.html"
+  - title: 知識與支援
+    entries:
+    - title: 註冊以取得支援
+      url: "/task-support-registration.html"
+    - title: 取得協助
+      url: "/task-get-help.html"
+  - title: 法律聲明
+    url: "/legal-notices.html"
+homepage:
+  tiles:
+  - title: 開始使用
+    links:
+    - title: 深入瞭 Cloud Volumes Service 解適用於 Google Cloud 的功能
+      url: concept-cvs-gcp.html
+    - title: 快速入門
+      url: task-quick-start.html
+  - title: 使用Cloud Volumes Service
+    links:
+    - title: 建立磁碟區
+      url: task-create-volumes.html
+    - title: 管理雲端磁碟區快照
+      url: task-manage-snapshots.html
+  - title: 部落格社群
+    links:
+    - title: NetApp社群
+      url: https://community.netapp.com/t5/Cloud-Data-Services/ct-p/CDS
+    - title: Cloud Central部落格
+      url: https://cloud.netapp.com/blog
+    - title: 雲端網路研討會
+      url: https://cloud.netapp.com/events
+product-family: {}

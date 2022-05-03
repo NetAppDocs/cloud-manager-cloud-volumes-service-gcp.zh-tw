@@ -1,0 +1,26 @@
+---
+sidebar: sidebar 
+permalink: task-remove-working-env.html 
+keywords: remove working environment, delete working environment, remove cloud volumes service, remove, delete 
+summary: 您可以從 Cloud Volumes Service Cloud Manager 移除適用於 Google Cloud 訂閱的功能、以及所有現有的磁碟區。磁碟區不會刪除、只會從 Cloud Manager 介面移除。 
+---
+= 從 Cloud Volumes Service Cloud Manager 移除
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+您可以從 Cloud Volumes Service Cloud Manager 移除適用於 Google Cloud 訂閱的功能、以及所有現有的磁碟區。磁碟區不會刪除、只會從 Cloud Manager 介面移除。
+
+
+TIP: 不 Cloud Volumes Service 支援從 Cloud Manager 刪除您的 for Google Cloud 訂閱。您只能透過 Google Cloud Console 執行此作業。
+
+.步驟
+. 開啟工作環境。
+. 按一下 image:screenshot_gallery_options.gif[""] 按一下頁面頂端的按鈕、然後按一下「 * 移除 Cloud Volumes Service 此功能 * 」。
+. 在確認對話方塊中、按一下 * 移除 * 。
+

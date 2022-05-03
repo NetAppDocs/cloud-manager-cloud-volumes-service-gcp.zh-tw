@@ -1,0 +1,33 @@
+---
+sidebar: sidebar 
+permalink: whats-new.html 
+keywords: 'what"s new, features, new, release notes' 
+summary: 在Cloud Volumes Service Cloud Manager中瞭解適用於Google Cloud的更新功能。 
+---
+= 新功能
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+在Cloud Volumes Service Cloud Manager中瞭解適用於Google Cloud的更新功能。
+
+
+
+== 2020年9月9日
+
+
+
+=== 支援Cloud Volumes Service for Google Cloud
+
+您現在Cloud Volumes Service 可以直接從Cloud Manager管理適用於Google Cloud的功能：
+
+* 設定及建立工作環境
+* 為Linux和UNIX用戶端建立及管理NFSv3和NFSv4.1磁碟區
+* 為Windows用戶端建立及管理SMB 3.x磁碟區
+* 建立、刪除及還原Volume快照
+

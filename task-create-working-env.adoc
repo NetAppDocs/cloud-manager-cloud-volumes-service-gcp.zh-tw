@@ -1,0 +1,59 @@
+---
+sidebar: sidebar 
+permalink: task-create-working-env.html 
+keywords: cloud volumes service for gcp, google cloud, cloud volumes, create cloud volumes, discover cloud volumes service for gcp, cloud volumes service subscription, discover cloud volumes service subscription, discover region, allowed clients, create snapshots 
+summary: 在 Cloud Volumes Service Cloud Manager 中建立一個適用於 Google Cloud 的工作環境、以建立及管理磁碟區和快照。 
+---
+= 建立Cloud Volumes Service 適用於Google Cloud工作環境的功能
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+在Cloud Volumes Service Cloud Manager中建立適用於Google Cloud的支援環境、以便建立及管理磁碟區和快照。
+
+無論您已經從Google Cloud Console建立磁碟區、或是剛註冊Cloud Volumes Service 使用Google Cloud的版本、但目前還沒有磁碟區、第一步是根據您的GCP訂閱、為磁碟區建立工作環境。
+
+如果此訂閱已存在雲端磁碟區、則磁碟區會出現在新的工作環境中。如果您尚未新增任何雲端磁碟區以供 GCP 訂閱、請在建立新的工作環境之後再新增。
+
+
+TIP: 如果您在多個Google Cloud專案中有訂閱和磁碟區、則必須針對每個專案執行此工作。
+
+新增每個專案的訂閱時、您必須提供下列資訊：
+
+* 服務帳戶認證（您下載的 Json 私密金鑰）
+* 專案名稱
+
+
+.步驟
+. 在 Cloud Manager 中、新增工作環境、選取位置 * Google Cloud * 、然後按一下 * 繼續 * 。
+. 選取 * Cloud Volumes Service 《 * 》 * 《 * 》 * 、然後按一下 * 「 Continue * 」。
++
+image:screenshot_add_cvs_gcp_working_env.png["為 Cloud Volumes Service 簽署以供簽署的功能性功能提供工作環境的快照。"]
+
+. 提供 Cloud Volumes Service 有關您的不訂閱資訊：
++
+.. 輸入您要使用的工作環境名稱。
+.. 複製 / 貼上您在先前步驟中下載的 Json 私密金鑰。
+.. 選取 Google Cloud 專案的名稱。
+.. 按一下 * 繼續 * 。
++
+image:screenshot_add_cvs_gcp_credentials.png["為 Cloud Volumes Service GCP 訂閱新增認證的快照。"]
+
+
+
+
+
+Cloud Manager 會顯示 Cloud Volumes Service 您的 Google Cloud 工作環境的功能。
+
+image:screenshot_cvs_gcp_cloud.png["適用於 Google Cloud 工作環境的功能快照 Cloud Volumes Service 。"]
+
+如果此訂閱已存在雲端磁碟區、則磁碟區會出現在新的工作環境中。您可以從 Cloud Manager 新增其他雲端磁碟區。
+
+如果此訂閱不存在任何雲端磁碟區、請立即建立。
+
+link:task-create-volumes.html["開始建立磁碟區"]。

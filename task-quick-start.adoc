@@ -1,0 +1,35 @@
+---
+sidebar: sidebar 
+permalink: task-quick-start.html 
+keywords: quick start, set up cloud volumes service 
+summary: 請依照下列步驟快速入門、或依照連結取得完整詳細資料。 
+---
+= Google Cloud的功能快速入門Cloud Volumes Service
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+請依照下列步驟快速入門、或依照連結取得完整詳細資料。
+
+[role="quick-margin-para"]
+從 Google 啟用 Cloud Volumes Service 適用於 GCP API 的功能、讓 Cloud Manager 能夠管理訂閱和雲端磁碟區。
+
+[role="quick-margin-para"]
+link:task-set-up-google-cloud.html["瞭解如何啟用API"]。
+
+[role="quick-margin-para"]
+從Google建立服務帳戶和角色、以便Cloud Manager存取Cloud Volumes Service 您的適用於Google Cloud的支援功能。
+
+[role="quick-margin-para"]
+link:task-set-up-google-cloud.html#set-up-a-service-account["瞭解如何設定服務帳戶"]。
+
+[role="quick-margin-para"]
+在 Cloud Manager 中、按一下 * 新增工作環境 * > * Google Cloud * > * Cloud Volumes Service S供 * 、然後提供服務帳戶和 Google Cloud 專案的詳細資料。
+
+[role="quick-margin-para"]
+link:task-create-working-env.html["瞭解如何建立工作環境"]。
