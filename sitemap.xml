@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+
+
+<urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  
+  
+    
+    
+  
+
+  
+  
+    <url>
+      <loc>https://docs.netapp.com/zh-tw/cloud-manager-cloud-volumes-service-gcp/concept-cvs-gcp.html</loc>
+      
+      <lastmod>2022-05-03T06:00:29+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/zh-tw/cloud-manager-cloud-volumes-service-gcp/</loc>
+      
+      <lastmod>2022-05-03T06:00:29+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/zh-tw/cloud-manager-cloud-volumes-service-gcp/legal-notices.html</loc>
+      
+      <lastmod>2022-05-03T06:00:29+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/zh-tw/cloud-manager-cloud-volumes-service-gcp//search.html</loc>
+      
+      <lastmod>2022-05-03T09:25:43+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/zh-tw/cloud-manager-cloud-volumes-service-gcp/task-create-volumes.html</loc>
+      
+      <lastmod>2022-05-03T06:00:29+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/zh-tw/cloud-manager-cloud-volumes-service-gcp/task-create-working-env.html</loc>
+      
+      <lastmod>2022-05-03T06:00:29+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/zh-tw/cloud-manager-cloud-volumes-service-gcp/task-get-help.html</loc>
+      
+      <lastmod>2022-05-03T06:00:29+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/zh-tw/cloud-manager-cloud-volumes-service-gcp/task-manage-active-directory.html</loc>
+      
+      <lastmod>2022-05-03T06:00:29+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/zh-tw/cloud-manager-cloud-volumes-service-gcp/task-manage-snapshots.html</loc>
+      
+      <lastmod>2022-05-03T06:00:29+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/zh-tw/cloud-manager-cloud-volumes-service-gcp/task-manage-volumes.html</loc>
+      
+      <lastmod>2022-05-03T06:00:29+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/zh-tw/cloud-manager-cloud-volumes-service-gcp/task-quick-start.html</loc>
+      
+      <lastmod>2022-05-03T06:00:29+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/zh-tw/cloud-manager-cloud-volumes-service-gcp/task-remove-working-env.html</loc>
+      
+      <lastmod>2022-05-03T06:00:29+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/zh-tw/cloud-manager-cloud-volumes-service-gcp/task-set-up-google-cloud.html</loc>
+      
+      <lastmod>2022-05-03T06:00:29+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/zh-tw/cloud-manager-cloud-volumes-service-gcp/task-support-registration.html</loc>
+      
+      <lastmod>2022-05-03T06:00:29+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/zh-tw/cloud-manager-cloud-volumes-service-gcp/whats-new.html</loc>
+      
+      <lastmod>2022-05-03T06:00:29+00:00</lastmod>
+      
+    </url>
+  
+
+  
+  
+</urlset>
